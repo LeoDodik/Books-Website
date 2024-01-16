@@ -1,0 +1,24 @@
+h1{
+    font-size: 4rem;
+    color: black
+}
+
+h2{
+    font-size: 3rem;
+    color: black;
+}
+
+p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.header-container{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+hr{
+    width: 50%;
+}

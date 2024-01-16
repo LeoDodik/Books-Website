@@ -1,0 +1,38 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Leo Dodik</h1>
+        <h2>BOOKS I'VE READ</h2>
+        <p>Brief yet comprehensive notes for each book, identified by their ISBN numbers for easy reference 
+            at your local library or elsewhere. This page will be regularly updated as I delve into more readings, so bookmark it for future check-ins. </p>
+        <br>
+        <p>The list is organized with my top recommendations at the forefront and can be sorted by title, newest additions, or personal favorites.</p>
+        <br>
+        <p>Feel free to peruse the FAQ page for insights into these notes. If you have any inquiries or wish to engage in discussions, drop me an email for prompt communication.</p>
+        <hr>
+    </div>
+
+    <!-- index.ejs -->
+<!-- index.ejs -->
+<!-- index.ejs -->
+<div class="mid-container">
+    <% if (imageUrl) { %>
+        <img src="<%= imageUrl %>" alt="Book Cover">
+    <% } else { %>
+        <p>No book cover available</p>
+    <% } %>
+</div>
+
+
+
+</body>
+</html>
