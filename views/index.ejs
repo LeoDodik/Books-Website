@@ -21,18 +21,23 @@
         <hr>
     </div>
 
-    <!-- index.ejs -->
-<!-- index.ejs -->
-<!-- index.ejs -->
-<div class="mid-container">
-    <% if (imageUrl) { %>
-        <img src="<%= imageUrl %>" alt="Book Cover">
-    <% } else { %>
-        <p>No book cover available</p>
-    <% } %>
-</div>
-
-
+    <div class="mid-container">
+        <h2 id="laws">48 Laws of Power</h2>
+        <ul>
+            <% for (let i = 0; i < readingDate.length; i++) { %>
+                <li><%= new Date(readingDate[i].read_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) %></li>
+            <% } %>
+        </ul>
+        <ul>
+            <% for (let i = 0; i < rating.length; i++) { %>
+                <li>Rating: <%= rating[i].rating %></li>
+            <% } %>
+        </ul>
+        <img src="https://imgs.search.brave.com/cxKt56UzQfu7NNVs-8HnBnxJ7XfRB8HC9OSMDqPMRVU/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vOS85ZC9H/cmVlbmVSb2JlcnQt/NDhMYXdzT2ZQb3dl/ci5qcGc" alt="">
+        <p id="laws-text">
+            "The 48 Laws of Power" by Robert Greene is a book that explores the principles and strategies for achieving and maintaining power. The introduction sets the tone for the entire work, emphasizing the timeless and universal nature of power dynamics. Greene suggests that power is an inevitable and pervasive force in human relationships, and by understanding its laws, individuals can navigate and influence situations to their advantage. The introduction serves as a prelude to the 48 laws that follow, providing readers with a glimpse into the complex and often Machiavellian nature of power in various contexts.
+        </p>
+    </div>
 
 </body>
 </html>
